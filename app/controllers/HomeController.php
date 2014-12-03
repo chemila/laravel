@@ -17,7 +17,7 @@ class HomeController extends BaseController {
 
 	public function showWelcome()
 	{
-		return View::make('hello');
+        var_dump(app('path'));
+        var_dump(Config::get('cache.memcached'));
 	}
-
 }

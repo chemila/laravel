@@ -1,11 +1,11 @@
 <?php
+xhprof_enable(XHPROF_FLAGS_MEMORY | XHPROF_FLAGS_NO_BUILTINS);
 /**
  * Laravel - A PHP Framework For Web Artisans
  *
  * @package  Laravel
  * @author   Taylor Otwell <taylorotwell@gmail.com>
  */
-
 /*
 |--------------------------------------------------------------------------
 | Register The Auto Loader
@@ -47,3 +47,5 @@ $app = require_once __DIR__.'/../bootstrap/start.php';
 */
 
 $app->run();
+
+require app('path.public') . '/xhprof.php';

@@ -26,8 +26,8 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment(array(
     //NOTE: 设置本地环境,gethostname();
-	//'local' => array('homestead'),
-    'local' => array('JoeMBP-2.local'),
+	'local' => array('homestead'),
+//    'local' => array('JoeMBP-2.local'),
 ));
 
 /*

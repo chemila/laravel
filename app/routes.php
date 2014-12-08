@@ -19,6 +19,6 @@ Route::get(
 );
 
 Route::get('/', 'HomeController@showWelcome');
-Route::get('user/{name?}', function ($action = 'test') {
-    var_dump($action);
-});
+Route::get('/user', 'UserController@index');
+Route::get('/user/create', 'UserController@create');
+Route::get('/user/test', 'UserController@test');

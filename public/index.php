@@ -45,7 +45,6 @@ $app = require_once __DIR__.'/../bootstrap/start.php';
 | and wonderful application we have whipped up for them.
 |
 */
-
 $app->run();
 
-require app('path.public') . '/xhprof.php';
+require_once __DIR__ . '/xhprof.php';

@@ -10,13 +10,13 @@ class UserController extends \BaseController
     public function index()
     {
         $users = User::all();
-
+        print_r(Config::get('app.aliases'));
         return $users;
     }
 
     public function test()
     {
-//        var_dump(Config::get('config::database.connections.mysql', 'no value')) . PHP_EOL;
+//        var_dump(Config::get('config::database.connections.mysql', 'no value'));
 //        var_dump(App::getConfigLoader());
         App::bind('TestB', 'TestB');
         $a = new TestA('a');

@@ -2,7 +2,6 @@
 require_once app('path') . DIRECTORY_SEPARATOR . 'lib/loader.php';
 $path = app('path.base') . DIRECTORY_SEPARATOR . 'production';
 $loader = new \lib\Loader(new \Illuminate\Filesystem\Filesystem(), app('path') . '/config');
-//App::instance('config', new \Illuminate\Config\Repository($loader, App::environment()));
 App::bind(
     'config',
     function ($container, $parameters) use ($loader) {

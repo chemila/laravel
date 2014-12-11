@@ -22,3 +22,4 @@ Route::get('/', 'HomeController@showWelcome');
 Route::get('/user', 'UserController@index');
 Route::get('/user/create', 'UserController@create');
 Route::get('/user/test', 'UserController@test');
+Route::get('/test', 'TestController@index');

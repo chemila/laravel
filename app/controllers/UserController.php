@@ -1,4 +1,5 @@
 <?php
+
 class UserController extends \BaseController
 {
 
@@ -16,8 +17,6 @@ class UserController extends \BaseController
 
     public function test()
     {
-//        var_dump(Config::get('config::database.connections.mysql', 'no value'));
-//        var_dump(App::getConfigLoader());
         App::bind('TestB', 'TestB');
         $a = new TestA('a');
         App::make('TestB', array($a, 'name' => 'b'))->showMe();
@@ -95,40 +94,5 @@ class UserController extends \BaseController
         //
     }
 
-
 }
 
-class TestA
-{
-    public $name;
-    use TraitEcho;
-
-    function __construct($name)
-    {
-        // TODO: Implement __construct() method.
-        $this->name = $name;
-    }
-
-}
-
-class TestB
-{
-    public $name;
-    use TraitEcho;
-
-    function __construct(TestA $a, $name)
-    {
-        // TODO: Implement __construct() method.
-        $this->a = $a;
-        $this->name = $this->a->name . ' and ' . $name;
-    }
-
-}
-
-trait TraitEcho
-{
-    public function showMe()
-    {
-        print $this->name . "<br>";
-    }
-}

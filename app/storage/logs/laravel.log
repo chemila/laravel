@@ -2062,3 +2062,45 @@ Stack trace:
 #2 /Users/Joe/dev/lib/laravel/public/xhprof.php(6): XHProfRuns_Default->save_run(Array, 'laravel')
 #3 /Users/Joe/dev/lib/laravel/public/index.php(50): require_once('/Users/Joe/dev/...')
 #4 {main} [] []
+[2014-12-11 10:05:55] production.ERROR: exception 'ErrorException' with message 'fopen(/usr/local/var/run/xhprof/54896c83357d3.laravel.xhprof): failed to open stream: Permission denied' in /usr/local/Cellar/php54-xhprof/254eb24/xhprof_lib/utils/xhprof_runs.php:136
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'fopen(/usr/loca...', '/usr/local/Cell...', 136, Array)
+#1 /usr/local/Cellar/php54-xhprof/254eb24/xhprof_lib/utils/xhprof_runs.php(136): fopen('/usr/local/var/...', 'w')
+#2 /Users/Joe/dev/lib/laravel/public/xhprof.php(6): XHProfRuns_Default->save_run(Array, 'laravel')
+#3 /Users/Joe/dev/lib/laravel/public/index.php(50): require_once('/Users/Joe/dev/...')
+#4 {main} [] []
+[2014-12-15 08:40:24] production.ERROR: exception 'ErrorException' with message 'fopen(/usr/local/var/run/xhprof/548e9e78697e4.laravel.xhprof): failed to open stream: Permission denied' in /usr/local/Cellar/php54-xhprof/254eb24/xhprof_lib/utils/xhprof_runs.php:136
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'fopen(/usr/loca...', '/usr/local/Cell...', 136, Array)
+#1 /usr/local/Cellar/php54-xhprof/254eb24/xhprof_lib/utils/xhprof_runs.php(136): fopen('/usr/local/var/...', 'w')
+#2 /Users/Joe/dev/lib/laravel/public/xhprof.php(6): XHProfRuns_Default->save_run(Array, 'laravel')
+#3 /Users/Joe/dev/lib/laravel/public/index.php(50): require_once('/Users/Joe/dev/...')
+#4 {main} [] []
+[2014-12-15 08:41:03] production.ERROR: exception 'ErrorException' with message 'fopen(/usr/local/var/run/xhprof/548e9e9f4e5d3.laravel.xhprof): failed to open stream: Permission denied' in /usr/local/Cellar/php54-xhprof/254eb24/xhprof_lib/utils/xhprof_runs.php:136
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'fopen(/usr/loca...', '/usr/local/Cell...', 136, Array)
+#1 /usr/local/Cellar/php54-xhprof/254eb24/xhprof_lib/utils/xhprof_runs.php(136): fopen('/usr/local/var/...', 'w')
+#2 /Users/Joe/dev/lib/laravel/public/xhprof.php(6): XHProfRuns_Default->save_run(Array, 'laravel')
+#3 /Users/Joe/dev/lib/laravel/public/index.php(50): require_once('/Users/Joe/dev/...')
+#4 {main} [] []
+[2014-12-15 08:41:04] production.ERROR: exception 'ErrorException' with message 'fopen(/usr/local/var/run/xhprof/548e9ea0590ae.laravel.xhprof): failed to open stream: Permission denied' in /usr/local/Cellar/php54-xhprof/254eb24/xhprof_lib/utils/xhprof_runs.php:136
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'fopen(/usr/loca...', '/usr/local/Cell...', 136, Array)
+#1 /usr/local/Cellar/php54-xhprof/254eb24/xhprof_lib/utils/xhprof_runs.php(136): fopen('/usr/local/var/...', 'w')
+#2 /Users/Joe/dev/lib/laravel/public/xhprof.php(6): XHProfRuns_Default->save_run(Array, 'laravel')
+#3 /Users/Joe/dev/lib/laravel/public/index.php(50): require_once('/Users/Joe/dev/...')
+#4 {main} [] []
+[2014-12-15 09:29:34] production.ERROR: exception 'ErrorException' with message 'fopen(/usr/local/var/run/xhprof/548ea9fe1226f.laravel.xhprof): failed to open stream: Permission denied' in /usr/local/Cellar/php54-xhprof/254eb24/xhprof_lib/utils/xhprof_runs.php:136
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'fopen(/usr/loca...', '/usr/local/Cell...', 136, Array)
+#1 /usr/local/Cellar/php54-xhprof/254eb24/xhprof_lib/utils/xhprof_runs.php(136): fopen('/usr/local/var/...', 'w')
+#2 /Users/Joe/dev/lib/laravel/public/xhprof.php(6): XHProfRuns_Default->save_run(Array, 'laravel')
+#3 /Users/Joe/dev/lib/laravel/public/index.php(50): require_once('/Users/Joe/dev/...')
+#4 {main} [] []
+[2014-12-15 10:01:42] production.ERROR: exception 'ErrorException' with message 'fopen(/usr/local/var/run/xhprof/548eb18641775.laravel.xhprof): failed to open stream: Permission denied' in /usr/local/Cellar/php54-xhprof/254eb24/xhprof_lib/utils/xhprof_runs.php:136
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'fopen(/usr/loca...', '/usr/local/Cell...', 136, Array)
+#1 /usr/local/Cellar/php54-xhprof/254eb24/xhprof_lib/utils/xhprof_runs.php(136): fopen('/usr/local/var/...', 'w')
+#2 /Users/Joe/dev/lib/laravel/public/xhprof.php(6): XHProfRuns_Default->save_run(Array, 'laravel')
+#3 /Users/Joe/dev/lib/laravel/public/index.php(50): require_once('/Users/Joe/dev/...')
+#4 {main} [] []

@@ -8,12 +8,27 @@ class TestController extends BaseController
      *
      * @return Response
      */
-    public function index()
+    public function getIndex()
     {
         App::bind('TestB', 'TestB');
         $a = new TestA('a');
         App::make('TestB', array($a, 'name' => 'b'))->showMe();
         return 'test';
+    }
+
+    public function getValidator()
+    {
+        $validator = Validator::make(
+            ['name' => 'test', 'email' => 'test.com'],
+            ['name' => ['required', 'min:15'], 'email' => 'email'],
+            ['name' => 'test', 'email' => 'invalid email']
+        );
+        if ($validator->fails()) {
+            print_r($validator->getCustomMessages());
+            return $validator->messages();
+        } else {
+            echo 'success';
+        }
     }
 }
 
